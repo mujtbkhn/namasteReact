@@ -15,15 +15,21 @@ export const StoreCard = ({ image, title, category, price, sale }) => {
     const navigate = useNavigate();
     const { id } = useParams();
 
+    const shouldDisplayButton = id ? true : false
+
+    const itemWithId = { ...item, id };
+
     const addToCart = (item) => {
         dispatch(addItem(item))
     }
     const removeFromCart = (item) => {
-        dispatch(removeItem(item))
+        if (item.id === id) {
+            dispatch(removeItem(item))
+        }
     }
     console.log();
 
-    const shouldDisplayButton = id ? true : false
+
 
     title = title.length > 30 ? title.slice(0, 30) + "..." : title
     return (
@@ -36,10 +42,10 @@ export const StoreCard = ({ image, title, category, price, sale }) => {
             {/* <h3>{user.name}{"_"}{user.email}</h3> */}
             {shouldDisplayButton && (
                 <>
-                    <button className="px-4 py-2 m-2 text-white bg-red-700 rounded-xl" onClick={() => addToCart(item)}>
+                    <button className="px-4 py-2 m-2 text-white bg-red-700 rounded-xl" onClick={() => addToCart(itemWithId)}>
                         Add to cart
                     </button>
-                    <button className="px-4 py-2 m-2 text-white bg-red-700 rounded-xl" onClick={() => removeFromCart(item)}>
+                    <button className="px-4 py-2 m-2 text-white bg-red-700 rounded-xl" onClick={() => removeFromCart(itemWithId)}>
                         Remove from cart
                     </button>
                 </>

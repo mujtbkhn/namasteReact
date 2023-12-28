@@ -52343,14 +52343,18 @@ const StoreCard = ({ image, title, category, price, sale })=>{
     const dispatch = (0, _reactRedux.useDispatch)();
     const navigate = (0, _reactRouterDom.useNavigate)();
     const { id } = (0, _reactRouterDom.useParams)();
+    const shouldDisplayButton = id ? true : false;
+    const itemWithId = {
+        ...item,
+        id
+    };
     const addToCart = (item)=>{
         dispatch((0, _cartSlice.addItem)(item));
     };
     const removeFromCart = (item)=>{
-        dispatch((0, _cartSlice.removeItem)(item));
+        if (item.id === id) dispatch((0, _cartSlice.removeItem)(item));
     };
     console.log();
-    const shouldDisplayButton = id ? true : false;
     title = title.length > 30 ? title.slice(0, 30) + "..." : title;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "border-solid border-2 border-sky-500 w-[350] h-[450] rounded-lg px-3 py-2 my-20 shadow-lg hover:shadow-xl flex flex-col justify-center items-center ",
@@ -52361,55 +52365,55 @@ const StoreCard = ({ image, title, category, price, sale })=>{
                 alt: title
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 38,
+                lineNumber: 44,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: title
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 39,
+                lineNumber: 45,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: category
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 40,
+                lineNumber: 46,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: `${price}`
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 41,
+                lineNumber: 47,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: price > 100 ? sale && sale.fifty : sale && sale.hundred
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 42,
+                lineNumber: 48,
                 columnNumber: 13
             }, undefined),
             shouldDisplayButton && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "px-4 py-2 m-2 text-white bg-red-700 rounded-xl",
-                        onClick: ()=>addToCart(item),
+                        onClick: ()=>addToCart(itemWithId),
                         children: "Add to cart"
                     }, void 0, false, {
                         fileName: "src/cards/StoreCard.js",
-                        lineNumber: 45,
+                        lineNumber: 51,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "px-4 py-2 m-2 text-white bg-red-700 rounded-xl",
-                        onClick: ()=>removeFromCart(item),
+                        onClick: ()=>removeFromCart(itemWithId),
                         children: "Remove from cart"
                     }, void 0, false, {
                         fileName: "src/cards/StoreCard.js",
-                        lineNumber: 48,
+                        lineNumber: 54,
                         columnNumber: 21
                     }, undefined)
                 ]
@@ -52417,7 +52421,7 @@ const StoreCard = ({ image, title, category, price, sale })=>{
         ]
     }, void 0, true, {
         fileName: "src/cards/StoreCard.js",
-        lineNumber: 37,
+        lineNumber: 43,
         columnNumber: 10
     }, undefined);
 };
@@ -52438,28 +52442,28 @@ const ShimmerStoreCard = ()=>{
                 alt: ""
             }, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 56,
+                lineNumber: 62,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {}, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 57,
+                lineNumber: 63,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {}, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 58,
+                lineNumber: 64,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {}, void 0, false, {
                 fileName: "src/cards/StoreCard.js",
-                lineNumber: 59,
+                lineNumber: 65,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/cards/StoreCard.js",
-        lineNumber: 55,
+        lineNumber: 61,
         columnNumber: 10
     }, undefined);
 };
