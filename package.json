@@ -1,0 +1,49 @@
+{
+  "name": "namaste-react---mujtaba",
+  "version": "1.0.0",
+  "description": "namaste react course by akshay saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujtbkhn/namaste-react.git"
+  },
+  "keywords": [
+    "mujtaba",
+    "khan"
+  ],
+  "author": "mujtaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mujtbkhn/namaste-react/issues"
+  },
+  "homepage": "https://github.com/mujtbkhn/namaste-react#readme",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "console-browserify": "^1.2.0",
+    "parcel": "^2.10.2",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.7",
+    "util": "^0.12.5"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "formik": "^2.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.20.1",
+    "yup": "^1.3.2"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions"
+  ]
+}
