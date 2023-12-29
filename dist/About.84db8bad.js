@@ -630,7 +630,7 @@ class About extends (0, _reactDefault.default).Component {
                     children: "This is about"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 18,
+                    lineNumber: 22,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Consumer, {
@@ -644,26 +644,26 @@ class About extends (0, _reactDefault.default).Component {
                             ]
                         }, void 0, true, {
                             fileName: "src/components/About.js",
-                            lineNumber: 22,
-                            columnNumber: 15
+                            lineNumber: 24,
+                            columnNumber: 36
                         }, this)
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 19,
+                    lineNumber: 23,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
                     name: "FirstChild"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 16,
-            columnNumber: 12
+            lineNumber: 20,
+            columnNumber: 13
         }, this);
     }
 }
@@ -727,14 +727,14 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "This is Profile Class Based Component"
                 }, void 0, false, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 41,
+                    lineNumber: 51,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: this.state.userInfo.avatar_url
                 }, void 0, false, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 42,
+                    lineNumber: 52,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -744,7 +744,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 43,
+                    lineNumber: 53,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -754,14 +754,14 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 44,
+                    lineNumber: 54,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true);
     }
 }
-exports.default = Profile; /**
+exports.default = Profile /**
  * CONSTRUCTOR
  * RENDER
  * API CALL
@@ -773,7 +773,7 @@ exports.default = Profile; /**
  * gone to a new page 
  * 
  * COMPONENT WILL UNMOUNT
- */ 
+ */ ;
 
   $parcel$ReactRefreshHelpers$1beb.postlude(module);
 } finally {
