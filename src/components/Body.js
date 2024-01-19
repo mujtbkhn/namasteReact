@@ -22,7 +22,7 @@ const Body = () => {
         try {
             const data = await fetch("https://fakestoreapi.com/products")
             const json = await data.json()
-            console.log(json);
+            // console.log(json);
             setAllStoreLists(json)
             setFilteredStoreLists(json)
 
@@ -55,7 +55,7 @@ const Body = () => {
             <div className="">
 
                 <div className="my-3 bg-amber-200 ">
-                    <input type="text" placeholder="Search" value={searchText} className="p-2 m-2" onChange={handleSearch} />
+                    <input type="text" placeholder="Search" data-testid="searchInput" name="Search" value={searchText} className="p-2 m-2" onChange={handleSearch} />
 
                     <button onClick={
                         () => {

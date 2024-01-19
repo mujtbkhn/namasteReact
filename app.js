@@ -600,7 +600,7 @@ const ShoesList =
 const ShoeCard = ({img, title, category, newPrice}) => {
    
 
-   console.log();
+//    console.log();
     return (
         <div className="card">
             <img src={ img} alt={ title} />

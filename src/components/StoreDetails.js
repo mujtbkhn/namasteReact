@@ -25,7 +25,7 @@ export const StoreDetails = ({sale, item}) => {
     return (
         <>
             {product ? (
-                <div className="flex flex-col items-center justify-center pt-8 font-semibold ">
+                <div data-testid="StoreDetailsCard" className="flex flex-col items-center justify-center pt-8 font-semibold ">
                     <h1>Store Id: {id}</h1>
                     <h1>Store Details Page</h1>
                     <h2>Description: </h2>

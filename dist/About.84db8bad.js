@@ -630,7 +630,7 @@ class About extends (0, _reactDefault.default).Component {
                     children: "This is about"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 22,
+                    lineNumber: 21,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Consumer, {
@@ -644,25 +644,25 @@ class About extends (0, _reactDefault.default).Component {
                             ]
                         }, void 0, true, {
                             fileName: "src/components/About.js",
-                            lineNumber: 24,
+                            lineNumber: 23,
                             columnNumber: 36
                         }, this)
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 23,
+                    lineNumber: 22,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
                     name: "FirstChild"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 20,
+            lineNumber: 19,
             columnNumber: 13
         }, this);
     }
