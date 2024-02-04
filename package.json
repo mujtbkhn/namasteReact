@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mujtbkhn/namaste-react#readme",
   "devDependencies": {
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@testing-library/jest-dom": "^6.1.6",
@@ -42,6 +42,7 @@
     "@reduxjs/toolkit": "^2.0.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "formik": "^2.4.5",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
